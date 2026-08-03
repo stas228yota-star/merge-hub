@@ -12,7 +12,7 @@ local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
 local VALID_KEY = "giga1488"
-local DISCORD_LINK = "https://discord.gg/mpCnmsak"
+local DISCORD_LINK = "https://discord.gg/TgjCuF7AUG"
 
 local speedEnabled = false
 local noclipEnabled = false
@@ -219,7 +219,7 @@ local DiscordPanel = Instance.new("Frame")
 DiscordPanel.Size = UDim2.new(0, 420, 0, 80)
 DiscordPanel.AnchorPoint = Vector2.new(0.5, 1)
 DiscordPanel.Position = UDim2.new(0.5, 0, 1, -25)
-DiscordPanel.BackgroundColor3 = Color3.fromRGB(88, 101, 242) -- Discord blurple
+DiscordPanel.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
 DiscordPanel.BorderSizePixel = 0
 DiscordPanel.ZIndex = 10
 DiscordPanel.Parent = KeyGui
@@ -230,7 +230,6 @@ DStroke.Color = Color3.fromRGB(140, 155, 255)
 DStroke.Thickness = 2
 DStroke.Parent = DiscordPanel
 
--- Discord logo (text emoji)
 local DLogo = Instance.new("TextLabel")
 DLogo.Size = UDim2.new(0, 60, 1, 0)
 DLogo.Position = UDim2.new(0, 5, 0, 0)
@@ -240,7 +239,6 @@ DLogo.TextSize = 36
 DLogo.ZIndex = 11
 DLogo.Parent = DiscordPanel
 
--- "TUT KEY" text
 local TutKey = Instance.new("TextLabel")
 TutKey.Size = UDim2.new(0, 240, 0, 26)
 TutKey.Position = UDim2.new(0, 70, 0, 8)
@@ -253,7 +251,6 @@ TutKey.TextXAlignment = Enum.TextXAlignment.Left
 TutKey.ZIndex = 11
 TutKey.Parent = DiscordPanel
 
--- Discord link
 local DLink = Instance.new("TextLabel")
 DLink.Size = UDim2.new(0, 240, 0, 22)
 DLink.Position = UDim2.new(0, 70, 0, 38)
@@ -266,7 +263,6 @@ DLink.TextXAlignment = Enum.TextXAlignment.Left
 DLink.ZIndex = 11
 DLink.Parent = DiscordPanel
 
--- Copy Button
 local CopyBtn = Instance.new("TextButton")
 CopyBtn.Size = UDim2.new(0, 90, 0, 50)
 CopyBtn.Position = UDim2.new(1, -100, 0.5, -25)
@@ -300,7 +296,6 @@ CopyBtn.MouseButton1Click:Connect(function()
     CopyBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
 end)
 
--- Pulsing animation on discord panel
 task.spawn(function()
     while DiscordPanel.Parent do
         TweenService:Create(DStroke, TweenInfo.new(1), {
@@ -314,7 +309,6 @@ task.spawn(function()
     end
 end)
 
--- Attempts counter
 local attempts = 0
 local maxAttempts = 5
 
