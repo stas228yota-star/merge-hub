@@ -12,7 +12,7 @@ local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
 local VALID_KEY = "giga1488"
-local DISCORD_LINK = "https://discord.gg/TgjCuF7AUG"
+local DISCORD_LINK = "https://discord.gg/ZM8ZYKqsaZ"
 
 local speedEnabled = false
 local noclipEnabled = false
