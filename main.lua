@@ -12,7 +12,7 @@ local Player = Players.LocalPlayer
 local Mouse = Player:GetMouse()
 
 local VALID_KEY = "giga1488"
-local DISCORD_LINK = "https://discord.gg/ZM8ZYKqsaZ"
+local DISCORD_LINK = "https://discord.gg/gE6w5X64E3"
 
 local speedEnabled = false
 local noclipEnabled = false
@@ -768,5 +768,5 @@ function loadMainHub()
     print("✅ Merge Hub загружен! GIGACHAD MODE ON 💪")
 end
 
-print("🔑 Merge Hub Key System | by giga — введите ключ")
+print("🔑 Merge Hub Key System | by giga — введите ключ giga1488")
 print("💬 Discord: " .. DISCORD_LINK)
